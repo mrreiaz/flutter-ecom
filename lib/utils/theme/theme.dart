@@ -13,7 +13,7 @@ import 'package:ecom/utils/theme/widget_themes/text_theme.dart';
 import 'package:ecom/utils/theme/widget_themes/typography.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants/colors.dart';
+import '../constants/colors.dart';
 
 class TAppThem {
   TAppThem._();
