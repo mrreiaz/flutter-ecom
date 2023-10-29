@@ -1,11 +1,16 @@
 import 'package:ecom/utils/theme/widget_themes/appbar_theme.dart';
 import 'package:ecom/utils/theme/widget_themes/bottom_sheet_theme.dart';
+import 'package:ecom/utils/theme/widget_themes/card_theme.dart';
 import 'package:ecom/utils/theme/widget_themes/checkbox_theme.dart';
 import 'package:ecom/utils/theme/widget_themes/chip_theme.dart';
+import 'package:ecom/utils/theme/widget_themes/drawer_theme.dart';
 import 'package:ecom/utils/theme/widget_themes/elevated_button_theme.dart';
+import 'package:ecom/utils/theme/widget_themes/icon_theme.dart';
+import 'package:ecom/utils/theme/widget_themes/list_tile.dart';
 import 'package:ecom/utils/theme/widget_themes/outlined_button_theme.dart';
 import 'package:ecom/utils/theme/widget_themes/text_field_theme.dart';
 import 'package:ecom/utils/theme/widget_themes/text_theme.dart';
+import 'package:ecom/utils/theme/widget_themes/typography.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants/colors.dart';
@@ -36,12 +41,8 @@ class TAppThem {
     indicatorColor: TColors.primary,
     hintColor: TColors.primary,
 // know more about it
-    typography: Typography(),
-    //
+    typography: TTypography.lightTypography,
     textTheme: TTextTheme.lightTextTheme,
-    // know more about it.
-    primaryTextTheme: TextTheme(),
-    // know more about it.
     chipTheme: TChipTheme.lightChipTheme,
     scaffoldBackgroundColor: TColors.white,
     appBarTheme: TAppBarTheme.lightAppBarTheme,
@@ -51,12 +52,12 @@ class TAppThem {
     outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
     // know more about it
-    cardTheme: CardTheme(),
-    drawerTheme: DrawerThemeData(),
-    iconTheme: IconThemeData(),
-    listTileTheme: ListTileThemeData(),
-    primaryIconTheme: IconThemeData(),
-// need to know more about colorScheme
+    cardTheme: TCardTheme.lightCardTheme,
+    drawerTheme: TDrawerThemeData.lightDrawerTheme,
+    listTileTheme: TListTileTheme.lightListTileTheme,
+    iconTheme: TIconTheme.lightIconTheme,
+    primaryIconTheme: TIconTheme.lightPrimaryIconTheme,
+    // need to know more about colorScheme
     //colorScheme: appLightColorScheme,
 // --------------------
   );
