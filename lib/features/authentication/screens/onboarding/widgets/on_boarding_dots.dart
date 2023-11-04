@@ -16,6 +16,9 @@ class OnBoardingDots extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     final controller = OnBoardingController.instance;
+
+    //final controller = Get.put(OnBoardingController());
+
     return Positioned(
         bottom: TDeviceUtils.getAppBarHeight() + 25,
         left: TSizes.defaultSpace,

@@ -14,13 +14,17 @@ class OnBoardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Get.put() create a instance from the given class.
     final controller = Get.put(OnBoardingController());
+    // final controller = OnBoardingController.instance;
     return Scaffold(
       body: Stack(
         children: [
           // horizental scroll page
           PageView(
+            // controller: controller.pageController using this line of code now pageview know current page and future page and how many page are left.
             controller: controller.pageController,
+            // onPageChanged know this swife the page using finger,
             onPageChanged: controller.updatePageIndicator,
             children: const [
               OnBoardingPage(
@@ -42,7 +46,7 @@ class OnBoardingScreen extends StatelessWidget {
           ),
           // skip button
           SkipButton(),
-          // Dot navigation indica'tor
+          // Dot navigation indicator
           OnBoardingDots(),
           // Circular button
           OnBoardingNextButton(),
